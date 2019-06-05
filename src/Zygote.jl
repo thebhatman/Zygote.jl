@@ -10,7 +10,8 @@ using LinearAlgebra: copytri!
 # HOWEVER, this is not Jameson-approved, nor well supported by the compiler, and
 # has several caveats. Recursion will cause inference to stack overflow.
 # Gradient redefinitions may result in ugly type errors. And Jameson *will* know.
-const usetyped = get(ENV, "ZYGOTE_TYPED", false) == "true"
+# const usetyped = get(ENV, "ZYGOTE_TYPED", false) == "true"
+const usetyped = true
 
 using IRTools
 using MacroTools, Requires
